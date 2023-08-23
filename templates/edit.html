@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}
+
+<title>Update Data</title>
+
+{% endblock %}
+
+{% block body %}
+
+<form action="" method="POST">
+        <input type="text" name="name" value="{{row.crud_name}}"><br>
+        <input type="text" name="email" value="{{row.crud_email}}"><br>
+        <input type="text" name="phone" value={{row.crud_phone}}"><br>
+        <input type="text" name="i_d" value="{{row.crud_id}}"><br>
+        <button type="submit">Submit</button>
+    </form>
+
+{% endblock %}

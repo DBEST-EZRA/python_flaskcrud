@@ -1,0 +1,52 @@
+
+table{
+    width: 1000px;
+    margin: auto;
+}
+
+table,th,td{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+th,td{
+    padding: 12px;
+}
+
+.edit{
+    background: blue;
+    color: white;
+    text-decoration: none;
+    padding: 4px;
+    border-radius: 2px;
+}
+
+.format1{
+    background: red;
+    color: white;
+    text-decoration: none;
+    padding: 4px;
+    border-radius: 2px;
+}
+
+h1{
+    margin-left: 25%;
+}
+
+.error{
+    background: rgb(214, 129, 129);
+    color: black;
+    width: 100%;
+    align-items: center;
+    padding: 12px;
+    text-align: center;
+}
+
+.success{
+    background: rgb(77, 218, 124);
+    color: black;
+    width: 100%;
+    align-items: center;
+    padding: 12px;
+    text-align: center;
+}

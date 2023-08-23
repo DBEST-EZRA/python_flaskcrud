@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<title>Registration Page</title>
+{% endblock %}
+
+{% block body %}
+
+<a class="edit" href="{{ url_for('insert') }}">ADD NEW</a>
+
+<h1>FLASK CRUD OPERATIONS</h1>
+
+    <table>
+        <thead>
+        <tr>
+            <th>No</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>ID</th>
+            <th>Action</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+    {% for row in data %}
+    <tr>
+            <td>{{row.id}}</td>
+            <td>{{row.crud_name}}</td>
+            <td>{{row.crud_email}}</td>
+            <td>{{row.crud_phone}}</td>
+            <td>{{row.crud_id}}</td>
+            <td><a href="/edit/{{row.id}}" class="edit">Update</a></td>
+            <td><a href="/delete/{{row.id}}" class="format1">Delete</a></td>
+        </tr>
+    {% endfor %}
+    </tbody>
+    </table>
+{% endblock %}
